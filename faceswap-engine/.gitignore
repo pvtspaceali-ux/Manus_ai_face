@@ -1,0 +1,46 @@
+# Private FaceSwap Engine — .gitignore
+
+# AI Model files (too large for git — download via setup script)
+models/*.onnx
+models/*.pth
+models/buffalo_l/
+
+# Output and temp directories
+output/
+temp/
+
+# Input data (user's personal files)
+input/source/*
+input/target/*
+!input/source/.gitkeep
+!input/target/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter
+.ipynb_checkpoints/
