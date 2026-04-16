@@ -2,9 +2,9 @@
 # Private FaceSwap Engine — Post-Processing Module
 # Restores skin texture, sharpens eyes, fixes low-res artifacts from 128px swaps
 
+import os
 import cv2
 import numpy as np
-import os
 import torch
 
 
