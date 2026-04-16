@@ -2,10 +2,10 @@
 # Private FaceSwap Engine — Video Pipeline Module
 # Extracts frames, applies face swap per frame, re-encodes with audio
 
-import cv2
 import os
 import shutil
 import subprocess
+import cv2
 from tqdm import tqdm
 
 
