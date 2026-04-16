@@ -2,12 +2,16 @@
 # Private FaceSwap Engine — 100% Local, Zero Cloud
 # Run: python app.py → Open http://127.0.0.1:7860
 
-import gradio as gr
-import cv2
-import numpy as np
 import os
 import tempfile
 import time
+import gradio as gr
+import cv2
+import numpy as np
+
+from core.swapper import FaceSwapper
+
+from core.swapper import FaceSwapper
 
 from core.swapper import FaceSwapper
 from core.enhancer import FaceEnhancer
