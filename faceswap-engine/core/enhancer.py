@@ -21,10 +21,11 @@ class FaceEnhancer:
         """
         if not os.path.exists(model_path):
             raise FileNotFoundError(
-                f"GFPGAN model not found: {model_path}\n"
-                f"Download from: https://github.com/TencentARC/GFPGAN/releases/download/v1.3.4/GFPGANv1.4.pth"
-            )
-
+    f"GFPGAN model not found: {model_path}\n"
+    "Download from: "
+    "https://github.com/TencentARC/GFPGAN/releases/download/"
+    "v1.3.4/GFPGANv1.4.pth"
+    )
         self.upscale = upscale
         self.bg_upsampler = None
 
@@ -42,8 +43,10 @@ class FaceEnhancer:
             channel_multiplier=2,
             bg_upsampler=self.bg_upsampler
         )
-        print(f"[OK] FaceEnhancer loaded. Upscale: {upscale}x | BG Upsampler: {bg_upsampler_path is not None}")
-
+       print(
+    f"[OK] FaceEnhancer loaded. Upscale: {upscale}x | "
+    f"BG Upsampler: {bool(bg_upsampler_path)}"
+    )
     def _load_realesrgan(self, model_path, upscale):
         """Load Real-ESRGAN model for background upscaling."""
         try:
